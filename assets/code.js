@@ -48,7 +48,7 @@
 				function inTimeout () {
 					var compiled;
 					try {
-						compiled = autoprefixer.process(text, { grid: true, browsers: "ie 10" });
+						compiled = autoprefixer.process(text, { grid: true, browsers: ["ie 10"] });
 						if (compiled.error) throw compiled.error;
 
 						// autoprefixer(opts).process(css)
